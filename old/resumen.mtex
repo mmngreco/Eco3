@@ -1,0 +1,54 @@
+2.7
+Considerar el siguiente proceso:
+
+$$ y_t^* = \delta + y_{t-1}^* + u_t $$
+
+Sustituyendo sucesivamente $$ y_{t-1} $$:
+
+$$ y_t^* = \delta t + \sum_{i=1}^{t} u_i = \delta t + y_t $$
+
+$$ T^{-\frac{3}{2}}\sum{y_{t-1}^* u_t} \rightarrow p \rightarrow \delta\{W(1) - \int_{1}^{0} W(r)dr \} $$
+$$ T^{-2} (\sum {y_{t-1}^*})^2  \rightarrow p \rightarrow \frac{\delta^2}{3} $$
+$$ T^{-3} \sum {t·y_{t-1}^*}  \rightarrow p \rightarrow \frac{\delta}{3} $$
+$$ T^{-4} (\sum {t y_{t-1}^*})^2  \rightarrow p \rightarrow \frac{\delta^2}{4} $$
+
+
+2.6
+Considerar el proceso:
+
+$$ y_t^* = y_{t-1} + u_t $$
+
+suponiendo $$ y_0 = 0 $$, $$ u_t $$ son iid. con media cero y varianza uno.
+
+Sustituyendo sucesivamente se llega a:
+
+$$ y_t = \sum_{i=1}^{t} u_i $$
+
+por tanto:
+
+$$ y_t \sim N(0,t) $$
+
+La no estacionariedad queda reflejada en la varianza.
+
+Se tiene que:
+
+$$ T^{-\frac{1}{2}} \sum u_t \rightarrow d \rightarrow W(1) = N(0,1) $$
+$$ T^{-\frac{3}{2}} \sum y_{t-1} \rightarrow d \rightarrow \int_{0}^{1} W(r)dr  $$
+$$ T^{-\frac{1}{2}} \bar y \rightarrow d \rightarrow \int_{0}^{1}] W(r)dr $$
+$$ T^{-1} \sum y_{t-1}u_t \rightarrow d \rightarrow \frac{1}{2}[ W(r)^2 - 1] $$
+$$ T^{-\frac{3}{2}} \sum t·u_{t} \rightarrow d \rightarrow W(1) - \int_{0}^{1} W(r)dr $$
+$$ T^{-{2}} \sum y_{t-1}^2 \rightarrow d \rightarrow \int_{0}^{1} W(r)^2dr $$
+$$ T^{-\frac{5}{2}} \sum t·y_{t-1} \rightarrow d \rightarrow \int_{0}^{1} r·W(r)dr $$
+$$ T^{-(v+1)} \sum t^v \rightarrow p \rightarrow \frac{1}{￼v+1} $$
+
+
+2.8
+
+Sea $$ Z_t $$ el proceso k-variante generado según (2.33). Sea Z la matriz T × k de las observaciones del proceso k variante y sea U la matriz T × k de las observaciones del vector de perturbaciones. Entonces se tiene que:
+
+$$ T^{-\frac{1}{2}}\Sigma u_{t}\rightarrow W(1) = N\left( 0,I_{k}\right) $$
+$$ T^{-1/2}Z^{'}_{-1}U\rightarrow \int ^{1}_{0}W\left( r\right) dW\left( r\right) $$
+$$ T^{-3/2}\Sigma ^{T}_{1}Z_{t-1}\rightarrow \int ^{1}_{0}w\left( r\right) dr $$
+$$ T^{2}Z'Z\rightarrow \int ^{1}_{0}W\left( r\right) W\left( r\right) 'dr $$
+$$ T^{-5/2}\Sigma tZ_{t-1}\rightarrow \int ^{1}_{0}rW\left( r\right) dr $$
+$$ T^{-3}t\left( Z'Z\right) \rightarrow \int ^{1}_{0}rW\left( r\right) W\left( r\right) 'dr $$
